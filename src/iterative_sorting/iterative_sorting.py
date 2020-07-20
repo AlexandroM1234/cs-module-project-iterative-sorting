@@ -22,11 +22,13 @@ def selection_sort(arr):
 def bubble_sort(arr):
     # Your code here
     # make a loop that goes through each element in the array
-    for i in range (0 , len(arr)-1):
-        current_index = i
+    for i in range (0, len(arr)-1):
     # then for everything in the array do another loop so you can compare its neighbor
-        for j in range(len(arr)-1):
+    # Dont forget to do minus one on the length to negate a uncessary go around
+        for j in range (len(arr)-1):
+            # If the number at the current index is > the neighbor
             if arr[j] > arr[j+1]:
+                # switch the values of the current and the neighbor
                 arr[j],arr[j+1] = arr[j+1] , arr[j]
     return arr
 
